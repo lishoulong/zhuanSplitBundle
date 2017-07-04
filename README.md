@@ -2,10 +2,15 @@
 change the sourceCode of RN, split the bundle into base part and business part.
 
 > 通过react-native-cli 的命令react-native， react-native init name --version="0.44.1"新的工程;
+
 > npm remove react-native;
+
 > 切换到npm私服的源rcnpm上，执行npm install @zz-app/react-native --save;
+
 > cd name/node_modules
+
 > ln -s react-native @zz-app/react-native;
+
 > 复制如下脚本到scripts中：
 
     ```
@@ -15,6 +20,7 @@ change the sourceCode of RN, split the bundle into base part and business part.
     ```
 
 > 然后再根目录执行执行一个shell脚本，内容如下。
+
     ```
     rm -rf ./output
     mkdir output
