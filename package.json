@@ -1,0 +1,25 @@
+{
+  "name": "testBundleFinal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "basebundle": "react-native bundle --platform android --entry-file ./base.android.js --bundle-output ./output/base.android.bundle --manifest-output ./output/base.android.manifest.json",
+    "businessbundle": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./output/index.android.bundle --manifest-file ./output/base.android.manifest.json"
+  },
+  "dependencies": {
+    "@zz-app/react-native": "^0.44.5",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.1"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
