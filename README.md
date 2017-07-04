@@ -16,8 +16,10 @@ change the sourceCode of RN, split the bundle into base part and business part.
     ```
     "basebundle": "react-native bundle --platform android --entry-file ./base.android.js --bundle-output ./output/base.android.bundle --manifest-output ./output/base.android.manifest.json",
     "businessbundle": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./output/index.android.bundle --manifest-file ./output/base.android.manifest.json"
-    修改index.android.js,以及base.android.js和index.ios.js中的react-native为@zz-app/react-native.
     ```
+
+
+> 修改index.android.js,以及base.android.js和index.ios.js中的react-native为@zz-app/react-native.
 
 > 然后再根目录执行执行一个shell脚本，内容如下。
 
